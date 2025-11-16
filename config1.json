@@ -1,0 +1,13 @@
+{
+  "mode": "deteccion",
+  "victim_policy": "menor_trabajo_hecho",
+  "detection_interval": 1,
+  "processes": [
+    { "pid": "P1", "priority": 1 },
+    { "pid": "P2", "priority": 2 }
+  ],
+  "resources": [
+    { "rid": "R1", "instances": 2 },
+    { "rid": "R2", "instances": 1 }
+  ]
+}

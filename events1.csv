@@ -1,0 +1,6 @@
+type,process,resource,amount_or_time
+REQUEST,P1,R1,1
+REQUEST,P2,R1,1
+REQUEST,P1,R2,1
+RELEASE,P1,R1,1
+REQUEST,P2,R2,1
