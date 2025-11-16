@@ -102,3 +102,21 @@ Esteban José Tumax Cano - 5090-23-16170
 # Fecha
 Guatemala, 16 noviembre 2025
 
+## FAQ (Preguntas Frecuentes)
+<details>
+  <summary><strong>P: ¿Por qué la aplicación se cierra sola (crashea)?</strong></summary>
+  <br>
+  <strong>R:</strong> Esto puede pasar si tienes dos versiones de PyQt5 o Matplotlib en conflicto. Asegúrate de haber instalado las dependencias en un entorno virtual limpio (`venv`) como se indica en la guía de instalación.
+</details>
+
+<details>
+  <summary><strong>P: No veo ningún interbloqueo, ¿qué archivo debo usar?</strong></summary>
+  <br>
+  <strong>R:</strong> ¡El escenario de interbloqueo está en `config2.json` y `events2.csv`! Carga esos dos archivos para ver la detección y recuperación en acción.
+</details>
+
+<details>
+  <summary><strong>P: ¿Puedo crear mis propios escenarios?</strong></summary>
+  <br>
+  <strong>R:</strong> ¡Sí! Simplemente crea un nuevo `config_mio.json` (definiendo procesos/recursos) y un `events_mio.csv` (definiendo la secuencia de `REQUEST`/`RELEASE`). El simulador puede cargar cualquier archivo con el formato correcto.
+</details>
