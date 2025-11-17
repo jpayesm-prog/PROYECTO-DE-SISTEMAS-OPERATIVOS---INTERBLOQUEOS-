@@ -76,21 +76,21 @@ Ejecutar → corre toda la simulación
 Paso a paso → avanza un evento por tick
 Reiniciar → vuelve todo al estado inicial
 
-# ¿Cómo usar la interfaz?
 ## ¿Cómo usar la interfaz?
 
-├── Panel izquierdo
-│   ├── Gráfico de estados (Activos, Bloqueados, Abortados)
-│   ├── Gráfico de uso de recursos
-│   ├── Grafo de Espera animado en tiempo real
-│   └── Registro de eventos, filtrable por tipo
+### Panel izquierdo
+- Gráfico de estados (Activos, Bloqueados, Abortados)
+- Gráfico de uso de recursos
+- Grafo de Espera animado en tiempo real
+- Registro de eventos con filtros por tipo
 
-├── Panel derecho
-│   ├── Detalles de procesos (prioridad, trabajo hecho, recursos asignados)
-│   ├── Detalles de recursos (instancias disponibles, uso, procesos asignados)
-│   └── Estadísticas del sistema y métricas clave
-│
-│   Puedes hacer clic sobre los nodos del grafo o en eventos para visualizar más información de cada proceso o recurso.
+### Panel derecho
+- Detalles de procesos (prioridad, trabajo hecho, recursos asignados)
+- Detalles de recursos (instancias disponibles, uso, procesos asignados)
+- Estadísticas generales y métricas del sistema
+
+Puedes hacer clic en los nodos del grafo o en cualquier evento del registro para ver información detallada de procesos o recursos.
+
 
 # Modo Detección y Recuperación
 El simulador construye el Wait-For Graph y cada cierto intervalo (configurable) ejecuta:
