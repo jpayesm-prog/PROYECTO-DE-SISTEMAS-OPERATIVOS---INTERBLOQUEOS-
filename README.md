@@ -77,14 +77,14 @@ Paso a paso → avanza un evento por tick
 Reiniciar → vuelve todo al estado inicial
 
 # ¿Cómo usar la interfaz?
-✔️ Panel izquierdo
+Panel izquierdo
 
 Gráfico de estados (Activos, Bloqueados, Abortados)
 Gráfico de uso de recursos
 Grafo de Espera animado
 Registro de eventos filtrable por tipo
 
-✔️ Panel derecho
+Panel derecho
 
 Detalles de procesos (prioridad, trabajo hecho, recursos asignados)
 Detalles de recursos (instancias, uso)
