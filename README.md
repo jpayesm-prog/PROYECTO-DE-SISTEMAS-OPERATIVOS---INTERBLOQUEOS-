@@ -121,6 +121,7 @@ El simulador incluye distintos tipos de escenarios que permiten observar desde c
 5. Cargas de trabajo aleatorias con generación automática  
    La interfaz permite generar configuraciones y listas de eventos aleatorios (`REQUEST`, `RELEASE`, `COMPUTE`) para crear escenarios no predecibles. Estos casos son útiles para probar la robustez del algoritmo de detección de interbloqueos, la selección de víctimas y el comportamiento global del sistema bajo diferentes patrones de carga.
 
+[Manual de usuario del simulador (PDF)](docs/Manual_Interbloqueos.pdf)
 # Autores
 ---
 
