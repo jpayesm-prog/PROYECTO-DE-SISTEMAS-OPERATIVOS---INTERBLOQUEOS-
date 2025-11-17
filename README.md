@@ -23,6 +23,7 @@ El simulador combina teoría de sistemas operativos con una interfaz gráfica in
 13. Filtros avanzados en el registro de eventos
 
 # Estructura del proyecto
+```text
 PROYECTO_INTERBLOQUEOS/
 │
 ├── config1.json
@@ -44,6 +45,8 @@ PROYECTO_INTERBLOQUEOS/
 │
 ├── temp_config.json
 └── temp_events.csv
+```
+
 
 # Requisitos
 Asegúrate de tener instalado:
