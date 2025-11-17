@@ -26,26 +26,27 @@ El simulador combina teoría de sistemas operativos con una interfaz gráfica in
 ```text
 PROYECTO_INTERBLOQUEOS/
 │
-├── config1.json
-├── config2.json
-├── config3.json
-├── config4.json
+├── config1.json               # Configuración de ejemplo (procesos, recursos, política, modo)
+├── config2.json               # Configuración adicional para pruebas
+├── config3.json               # Variantes de escenarios
+├── config4.json               # Configuración extendida
 │
-├── events1.csv
-├── events2.csv
-├── events3.csv
-├── events4.csv
+├── events1.csv                # Secuencia de eventos (REQUEST, RELEASE, COMPUTE)
+├── events2.csv                # Caso de prueba 2
+├── events3.csv                # Caso de prueba 3
+├── events4.csv                # Caso de prueba 4
 │
-├── deadlock.py
-├── gui.py
-├── io_utils.py
-├── main.py
-├── models.py
-├── sim.py
+├── deadlock.py                # Algoritmos de detección de ciclos y selección de víctima
+├── gui.py                     # Interfaz gráfica completa (PyQt5 + Matplotlib + NetworkX)
+├── io_utils.py                # Carga de config.json y events.csv
+├── main.py                    # Ejecución del simulador sin interfaz (modo consola)
+├── models.py                  # Modelado de procesos, recursos y SystemState
+├── sim.py                     # Motor de simulación: REQUEST, RELEASE, COMPUTE y detección
 │
-├── temp_config.json
-└── temp_events.csv
+├── temp_config.json           # Configuración generada automáticamente por la GUI
+└── temp_events.csv            # Eventos generados automáticamente por la GUI
 ```
+
 
 
 # Requisitos
