@@ -110,10 +110,18 @@ Puedes probar:
 5. Cargas aleatorias con generación automática
 
 # Autores
-Karla Gabriela Mendoza Bravo - 5090-23-15243 
-Andrea Paola Chacón Segura - 5090-23-1225
-Joseline Vanessa Payes Mejía - 5090-23-14071
-Esteban José Tumax Cano - 5090-23-16170
+---
+
+### Autores
+
+<div align="center">
+  
+**Karla Gabriela Mendoza Bravo** (5090-23-15243)<br>
+**Andrea Paola Chacón Segura** (5090-23-1225)<br>
+**Joseline Vanessa Payes Mejía** (5090-23-14071)<br>
+**Esteban José Tumax Cano** (5090-23-16170)
+
+</div>
 
 # Fecha
 Guatemala, 16 noviembre 2025
