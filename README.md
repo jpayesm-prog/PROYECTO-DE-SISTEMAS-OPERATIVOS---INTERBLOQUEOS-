@@ -23,15 +23,27 @@ El simulador combina teoría de sistemas operativos con una interfaz gráfica in
 13. Filtros avanzados en el registro de eventos
 
 # Estructura del proyecto
-├── gui.py               # Interfaz gráfica (PyQt5)
-├── sim.py               # Motor de simulación por eventos
-├── deadlock.py          # Algoritmos de detección y resolución de interbloqueos
-├── models.py            # Modelos del sistema (procesos, recursos, estado)
-├── io_utils.py          # Carga de config.json y events.csv
-├── main.py              # Punto de ejecución no visual
-├── config.json          # Archivo de configuración (ejemplo)
-├── events.csv           # Archivo de eventos (ejemplo)
-└── README.md            # Instructivo
+PROYECTO_INTERBLOQUEOS/
+│
+├── config1.json
+├── config2.json
+├── config3.json
+├── config4.json
+│
+├── events1.csv
+├── events2.csv
+├── events3.csv
+├── events4.csv
+│
+├── deadlock.py
+├── gui.py
+├── io_utils.py
+├── main.py
+├── models.py
+├── sim.py
+│
+├── temp_config.json
+└── temp_events.csv
 
 # Requisitos
 Asegúrate de tener instalado:
