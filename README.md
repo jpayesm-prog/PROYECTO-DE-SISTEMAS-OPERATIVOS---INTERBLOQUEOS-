@@ -102,13 +102,24 @@ El simulador construye el Wait-For Graph y cada cierto intervalo (configurable) 
 5. Liberación de recursos
 6. Continuación normal del sistema
 
-# Escenarios de prueba
-Puedes probar:
-1. Ciclos simples (P1 ↔ P2)
-2. Ciclos largos (P1 → P2 → P3 → P1)
-3. Múltiples procesos bloqueados
-4. Recursos con múltiples instancias
-5. Cargas aleatorias con generación automática
+## Escenarios de prueba
+
+El simulador incluye distintos tipos de escenarios que permiten observar desde casos simples hasta situaciones complejas de interbloqueo. En el repositorio se proporcionan archivos `config*.json` y `events*.csv` que representan estos casos de prueba.
+
+1. Ciclos simples de interbloqueo (P1 ↔ P2)  
+   Escenario básico donde dos procesos se bloquean mutuamente al solicitar recursos que el otro ya posee. Es ideal para visualizar de forma clara el grafo de espera (Wait-For Graph) y cómo el algoritmo detecta el ciclo entre ambos procesos.
+
+2. Ciclos largos entre varios procesos (P1 → P2 → P3 → P1)  
+   Caso donde la dependencia se extiende a más de dos procesos, haciendo que el interbloqueo sea menos evidente a simple vista. El grafo de espera permite identificar el ciclo completo y, una vez detectado, se aplica la política de selección de víctima configurada en el sistema.
+
+3. Múltiples procesos bloqueados de forma simultánea  
+   Situación en la que varios procesos compiten por los mismos recursos y terminan en estado bloqueado. Este escenario sirve para analizar el impacto en la “salud del sistema”, el porcentaje de procesos bloqueados y cómo evoluciona la simulación a medida que se resuelven o no los interbloqueos.
+
+4. Recursos con múltiples instancias y alta contención  
+   En estos casos, un mismo recurso dispone de varias instancias, pero la demanda total de los procesos es muy alta. Se pueden estudiar situaciones donde algunos procesos obtienen parte de los recursos mientras otros esperan, evaluando cómo la política de asignación y liberación afecta al rendimiento y a la aparición de ciclos.
+
+5. Cargas de trabajo aleatorias con generación automática  
+   La interfaz permite generar configuraciones y listas de eventos aleatorios (`REQUEST`, `RELEASE`, `COMPUTE`) para crear escenarios no predecibles. Estos casos son útiles para probar la robustez del algoritmo de detección de interbloqueos, la selección de víctimas y el comportamiento global del sistema bajo diferentes patrones de carga.
 
 # Autores
 ---
